@@ -1,3 +1,7 @@
+# Screenshots:
+![screely-1626158644592](https://user-images.githubusercontent.com/65512317/125406061-b7149880-e3b8-11eb-94a7-cc90ba9e5b37.png)
+
+
 # MovieDB
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.

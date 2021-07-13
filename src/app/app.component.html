@@ -1,0 +1,21 @@
+<app-banner></app-banner>
+
+<div class="moviesPopular">
+  <div class="moviePop" *ngFor="let movie of arrMoviePopular">
+    <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="movie">
+    <h2>{{ movie.original_title }}</h2>
+    <p class="dataMovie">Fecha: {{movie.release_date}}</p>
+      <p class="nota">🏆 Nota: {{movie.vote_average}}</p>
+
+
+    <p>{{ movie.overview }}</p>
+
+  </div>
+</div>
+
+<div class="next">
+  <button (click)="changePage(false)" [disabled]="currentPage === 1"> Anterior </button>
+  <button (click)="changePage(true)" [disabled]="currentPage === numPages">Siguiente</button>
+</div>
+
+<app-bt-pages></app-bt-pages>

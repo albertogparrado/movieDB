@@ -1,0 +1,4 @@
+<div class="next">
+  <button (click)="changePage(false)" [disabled]="currentPage === 1"> Anterior </button>
+  <button (click)="changePage(true)" [disabled]="currentPage === numPages">Siguiente</button>
+</div>
